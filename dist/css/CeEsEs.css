@@ -1,0 +1,17 @@
+/* Hover message style */
+form input::after {
+  content: attr(data-hover-message);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Show hover message on input hover */
+form input:hover::after {
+  display: block;
+}
